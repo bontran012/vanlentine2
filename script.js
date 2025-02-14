@@ -11,6 +11,9 @@ async function pesanAwal() {
         confirmButtonText: 'Xác nhận',
         allowOutsideClick: false
     });
+
+    // Phát nhạc khi popup đầu tiên xuất hiện
+    playMusic(); 
     
     await swalst.fire({
         title: 'Chào cục cưngg! ❤️',
@@ -25,20 +28,21 @@ async function pesanAwal() {
         imageUrl: '' + stiker3.src,
     });
     await swalst.fire({
-        title: 'Chúc em luôn luôn xinh đẹpp,vui vẻ và hạnh phúc❤️',
+        title: 'Chúc em luôn luôn xinh đẹpp, vui vẻ và hạnh phúc❤️',
         imageUrl: '' + stiker4.src,
     });
     await swalst.fire({
         title: '😘💕',
         imageUrl: '' + stiker5.src,
     });
-    
+
     if (ten) {
         halo.innerHTML = `Chèoo bé ${ten} iu dấu của anh 🥰`;
     }
 
     mulaikonten();
 }
+
 
 
 ftom = 0;
@@ -248,4 +252,9 @@ setInterval(function () {
 document.getElementById('suratin').addEventListener('click', function() {
     document.getElementById('giftMessage').style.display = 'none';
     });
-
+function playMusic() {
+        const audio = new Audio('tangem4.mp3'); // Thay bằng tên file nhạc của bạn
+        audio.loop = true; // Lặp lại nhạc nếu muốn
+        audio.play().catch(error => console.log("Tự động phát nhạc bị chặn", error));
+    }
+    
