@@ -20,15 +20,15 @@ async function pesanAwal() {
         imageUrl: '' + stiker1.src,
     });
     await swalst.fire({
-        title: 'Anh chỉ muốn nói là 😍',
+        title: 'Anh chỉ muốn nói là😄 ',
         imageUrl: '' + stiker2.src,
     });
     await swalst.fire({
-        title: 'Gửi đến em lời chúc Valentine🤭❤️',
+        title: 'chúc em có một ngày Valentine duii dẻ🤭❤️',
         imageUrl: '' + stiker3.src,
     });
     await swalst.fire({
-        title: 'Chúc em luôn luôn xinh đẹpp, vui vẻ và hạnh phúc❤️',
+        title: 'Chúc em luôn luôn xinh đẹp , vui vẻ và hạnh phúc nè❤️',
         imageUrl: '' + stiker4.src,
     });
     await swalst.fire({
@@ -37,7 +37,7 @@ async function pesanAwal() {
     });
 
     if (ten) {
-        halo.innerHTML = `Chèoo bé ${ten} iu dấu của anh 🥰`;
+        halo.innerHTML = `Chèoo bé ${ten} iu dấu của anh😽`;
     }
 
     mulaikonten();
